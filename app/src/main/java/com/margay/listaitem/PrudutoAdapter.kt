@@ -33,9 +33,9 @@ class PrudutoAdapter(private val context: Context, private val list: MutableList
 
     //classe interna
     inner class ProdutoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val image = itemView.findViewById<ImageView>(R.id.imageId)
-        val nomeProduto = itemView.findViewById<TextView>(R.id.nomeProduto)
-        val descricao = itemView.findViewById<TextView>(R.id.description)
-        val preco = itemView.findViewById<TextView>(R.id.preco)
+        val image: ImageView = itemView.findViewById(R.id.imageId)
+        val nomeProduto: TextView = itemView.findViewById(R.id.nomeProduto)
+        val descricao: TextView = itemView.findViewById(R.id.description)
+        val preco: TextView = itemView.findViewById(R.id.preco)
     }
 }
